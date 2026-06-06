@@ -36,7 +36,7 @@
       font-size: 22px;
       margin-top: 20px;
     }
-  </style>
+  
   .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -46,8 +46,17 @@
 
 .gallery img {
   width: 48%;
+  height: 220px;
+  object-fit: cover;
   border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s;
 }
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+  </style>
 </head>
 <body>
 
